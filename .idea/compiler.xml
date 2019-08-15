@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sm-registry" />
+        <module name="sm-gateway" />
+        <module name="sm-item-service" />
+        <module name="sm-item-interface" />
+        <module name="sm-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="smregistery" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sm-common" options="-parameters" />
+      <module name="sm-gateway" options="-parameters" />
+      <module name="sm-item-interface" options="-parameters" />
+      <module name="sm-item-service" options="-parameters" />
+      <module name="sm-registry" options="-parameters" />
+      <module name="smazon" options="-parameters" />
+      <module name="smregistery" options="-parameters" />
+    </option>
+  </component>
+</project>
